@@ -34,11 +34,6 @@ public class SearchPage extends PageObject {
     public void tickManufacturer(){
         allManufacturers.click();
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", xiaomiChkbox);
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
     public void tickAmountOfMemory(){
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", intMemBtn);
