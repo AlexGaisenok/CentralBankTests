@@ -22,6 +22,7 @@ public class DNSMainPage extends PageObject {
     public boolean isInitialized() {
         return smartPhonesL1.isDisplayed();
     }
+
     public void chooseSmartPhones2019(){
 
         Actions builder = new Actions(driver);
