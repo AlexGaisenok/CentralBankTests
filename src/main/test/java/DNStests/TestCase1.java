@@ -16,9 +16,10 @@ public class TestCase1 extends DriverSetup {
         assertTrue(dnsMainPage.isInitialized());
         dnsMainPage.chooseSmartPhones2019();
         SearchPage searchPage = new SearchPage(driver);
-        searchPage.tickManufacturer();
+
         searchPage.tickThePriceRange();
         searchPage.tickAmountOfMemory();
+        searchPage.tickManufacturer();
         searchPage.applyFilters();
     }
 }
